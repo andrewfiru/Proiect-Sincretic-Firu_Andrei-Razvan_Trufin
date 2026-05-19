@@ -18,8 +18,8 @@ WATER_PIN = 27
 RESET_PIN = 22
 
 #Telegram ChatBot Alerts
-BOT_TOKEN="8875570340:AAF57ADb3W4mQ_T_BN6TK8-Au-wLXgl62pc"
-CHAT_ID="8694947948"
+BOT_TOKEN="Token-ul Botului de Telegram"
+CHAT_ID="Chat IDul DVS."
 
 #Hardware
 led=LED(LED_PIN)
@@ -61,7 +61,7 @@ def temperature_loop():
         
 #Telegram Message Alert
 def send_telegram_message(message):
-    url=f"https://api.telegram.org/bot8875570340:AAF57ADb3W4mQ_T_BN6TK8-Au-wLXgl62pc/sendMessage"
+    url=f"https://api.telegram.org/BOT-ID/sendMessage"
     data={
         "chat_id": CHAT_ID,
         "text": message
